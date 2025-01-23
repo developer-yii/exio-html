@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assest/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="assest/images/x-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="assest/css/style.css" />
+  <link rel="stylesheet" href="assest/css/responsive.css" />
+  <title>Check & Match Property</title>
+</head>
+
+<body class="matchProperty">
+
+    <!-- header start -->
+    <header class="headerInner">
+        <div class="header-part">
+            <div class="container">
+                <div class="header-box">
+                    <div class="logo-box">
+                        <div>
+                            <a href="index.html"><img src="assest/images/logo-img.png" alt="logo-img" /></a>
+                        </div>
+                        <div class="cityDropDown">
+                            <ul>
+                                <li>
+                                    <a class="cityClick" href="javascript:void(0)">Ahmedabad <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="citySelect">
+                                        <li><a href="javascript:void(0)">Ahmedabad</a></li>
+                                        <li><a href="javascript:void(0)">Bharuch</a></li>
+                                        <li><a href="javascript:void(0)">Surat</a></li>
+                                        <li><a href="javascript:void(0)">Vadodara</a></li>
+                                        <li><a href="javascript:void(0)">Mehsana</a></li>
+                                        <li><a href="javascript:void(0)">Rajkot</a></li>
+                                        <li><a href="javascript:void(0)">Jamnagar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-nav">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="second-menu"><i class="fa-solid fa-circle-check"></i> Check and match property</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="user-menu"><i class="fa-solid fa-user"></i></a>
+                                <ul class="userDropDown">
+                                <li><a href="javascript:void(0)"><img src="assest/images/login.png" alt="login">Login</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/project.png" alt="project">Project Insights</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/shortlist.png" alt="shortlist">Shortlisted Properties</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/report.png" alt="report">Downloaded Reports</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/compare.png" alt="compare">Compare Reports</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/assist.png" alt="assist">Property Assist</a></li>
+                                <li><a href="javascript:void(0)"><img src="assest/images/contact.png" alt="contact">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- check property section -->
+     <section class="checkProperty">
+        <div class="container">
+            <div class="checkPropertyBox">
+                <div class="main_property">
+                    <div class="left_propertyBox">
+                        <div class="topFilterBar">
+                            <div class="searchBar">
+                                <input type="search" name="" id="" placeholder="Locality, Landmark, Project, or Builder">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="filterBox">
+                                <a href="javascript:void(0)"><i class="bi bi-funnel"></i></a>
+                            </div>
+                        </div>
+                        <div class="proertyMapBox">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74843718624!2d72.41493399983852!3d23.020474096845316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1736482245143!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="right_propertyBox">
+                        <div class="rightListSec">
+                            <div class="toptabSec">
+                                <div class="tabflex">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-thumbs-up"></i> Appraisal</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-puzzle-piece"></i> Best Match</button>
+                                        </li>
+                                    </ul>
+                                    <div class="heartBox">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="propertyCard">
+                                                    <div class="imgBox">
+                                                        <img src="assest/images/property-img.png" alt="property-img">
+                                                        <div class="imgheader">
+                                                            <span>Best for Investment</span>
+                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="priceBox">
+                                                        <div class="price">
+                                                            <h5>₹50L-1Cr</h5>
+                                                        </div>
+                                                        <div class="boxLogo">
+                                                            <img src="assest/images/x-btn.png" alt="x-btn">
+                                                            <span>60%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>GANESH GLORY</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <div class="homeBox comBox">
+                                                            <img src="assest/images/Home.png" alt="Home">
+                                                            <p>5 BHK Bungalows</p>
+                                                        </div>
+                                                        <div class="location comBox">
+                                                            <img src="assest/images/Location.png" alt="Location">
+                                                            <p>Gota, Ahmedabad</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addressBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
+                                                        <a href="javascript:void(0)">more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- check property section -->
+
+
+
+<script src="assest/js/jquery-3.7.1.min.js"></script>
+<script src="assest/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="assest/js/custom.js"></script>
+
+<script>
+    $(".heartIconFill").click(function () {
+        $(this).toggleClass("fa-regular fa-solid");
+    });
+</script>
+
+</body>
+
+</html>
