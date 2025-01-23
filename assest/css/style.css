@@ -2345,6 +2345,7 @@ body.matchProperty {
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
+    background-color: var(--white-color);
 }
 
 .insightReport .reportTitle {
@@ -3092,14 +3093,233 @@ header.removeHeader.show {
     padding: 20px 0 40px;
 }
 
+.left_traking_details .chartBox {
+    margin-bottom: 70px;
+}
 
+.left_traking_details .chartBox canvas {
+    height: 400px !important;
+}
 
+.left_traking_stepSec .stepallBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
+.left_traking_stepSec .stepallBox:not(:last-child) {
+    margin-bottom: 70px;
+}
 
+.left_traking_stepSec .stepallBox .stepText {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+}
 
+.left_traking_stepSec .stepallBox .stepText .howtoStep h5 {
+    margin-bottom: 0;
+}
 
+.left_traking_stepSec .stepallBox .stepText .howtoStep p {
+    font-size: 16px;
+    font-family: 'Inter-Regular';
+    color: var(--heading-text);
+}
 
+.left_traking_stepSec .stepallBox .stepText span {
+    width: 350px;
+    font-size: 16px;
+    font-family: 'Inter-Regular';
+    color: var(--heading-text);
+}
+
+.left_traking_stepSec .stepallBox .stepText .checkImg img {
+    width: 45px;
+}
+
+.left_traking_stepSec .stepallBox .stepimg {
+    width: 10%;
+    height: 85px;
+    position: relative;
+}
+
+.left_traking_stepSec .stepallBox .stepimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.left_traking_stepSec .stepallBox .stepimg .moreimg a{
+    background-color: var(--white-color);
+    color: #000000;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
 /* --------- site_traking_detail_page css end --------- */
 
 
+/* --------- downloaded_certificates css start --------- */
+
+.downloaded_certificates .downloaded_certificates_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 30px;
+}
+
+.downloaded_certificates .downloaded_certificates_box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.downloaded_certificates .certificates_box {
+    width: 85%;
+}
+
+.downloaded_certificates .detailsTextSec,
+.compare_reports .detailsTextSec {
+    margin-top: 0;
+}
+
+.downloaded_certificates .download_box {
+    width: 15%;
+    text-align: center;
+    border-left: 1px solid var(--border-color);
+    min-height: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloaded_certificates .download_box a {
+    height: 100%;
+    width: 100%;
+    color: #1C3C6E;
+    font-size: 15px;
+}
+
+.downloaded_certificates .download_box a img {
+    width: 100%;
+    max-width: 42px;
+    margin-bottom: 5px;
+}
+
+.downloaded_certificates .siteDetails .textBox h5>span {
+    font-size: 20px !important;
+    margin-bottom: 0;
+    color: var(--green-color) !important;
+    font-weight: 600 !important;
+    vertical-align: bottom;
+}
+
+.downloaded_certificates .siteDetails .textBox h5 img {
+    width: 100%;
+    max-width: 110px;
+}
+
+
+/* --------- downloaded_certificates css end --------- */
+
+
+/* --------- compare_reports css start --------- */
+
+.compare_reports .compare_reports_box {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.compare_reports .certificates_box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 85%;
+}
+
+.compare_reports .compare_reports_box .download_box {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compare_reports .detailmainSec {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.compare_reports .detailmainSec .innerPriceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.compare_reports .detailmainSec .innerPriceBox .priceShare h5 {
+    margin-bottom: 0;
+}
+
+.compare_reports .detailmainSec .innerPriceBox .boxLogo img {
+    width: 100%;
+    max-width: 110px;
+}
+
+.compare_reports .detailmainSec .innerPriceBox .boxLogo span {
+    font-size: 20px !important;
+    margin-bottom: 0;
+    color: var(--green-color) !important;
+    font-weight: 600 !important;
+    vertical-align: bottom;
+}
+
+.compare_reports .detailmainSec .endText p {
+    margin: 10px 0;
+}
+
+.compare_reports .certificates_box .compareVs {
+    height: 64px;
+    width: 100%;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 64px;
+}
+
+.compare_reports .compare_reports_box .download_box a {
+    height: 100%;
+    width: 100%;
+    color: #1C3C6E;
+    font-size: 15px;
+    text-align: center;
+}
+
+.compare_reports .compare_reports_box .download_box a img {
+    width: 100%;
+    max-width: 42px;
+    margin-bottom: 5px;
+}
+
+
+
+/* --------- compare_reports css end --------- */
