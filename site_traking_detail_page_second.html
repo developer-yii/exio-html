@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
   <link rel="stylesheet" href="assest/css/style.css" />
   <link rel="stylesheet" href="assest/css/responsive.css" />
-  <title>Site Traking Detail page</title>
+  <title>Site Traking Detail page </title>
 </head>
 
 <body>
@@ -134,14 +134,34 @@
             </div>
         </section>
         
-        <section class="site_traking_section">
+        <section class="site_traking_section site_traking_section_new">
             <div class="container">
                 <div class="site_traking_detail_box">
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="left_traking_details">
-                                <div class="chartBox">
-                                    <canvas id="chart"></canvas>
+                                <div class="site_track_bar">
+                                    <div class="projectbarText">
+                                        <h6 class="left">Project <br> Start</h6>
+                                        <h6 class="right">Project <br> End</h6>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-line"></div>
+                                        <div class="progress-line-fill"></div>
+                                        <div class="progress-step"><span>10%</span></div>
+                                        <div class="progress-step"><span>20%</span></div>
+                                        <div class="progress-step"><span>30%</span></div>
+                                        <div class="progress-step"><span>40%</span></div>
+                                        <div class="progress-step"><span>50%</span></div>
+                                        <div class="progress-step"><span>60%</span></div>
+                                        <div class="progress-step"><span>70%</span></div>
+                                        <div class="progress-step"><span>80%</span></div>
+                                        <div class="progress-step"><span>90%</span></div>
+                                        <div class="progress-step"><span>100%</span></div>
+                                    </div>
+                                    <div class="barDiscp">
+                                        <p>It is a long established fact that a reader will be distracted by the  readable content of a page when looking at its layout.</p>
+                                    </div>
                                 </div>
                                 <div class="left_traking_stepSec desktop">
                                     <div class="stepallBox">
@@ -365,9 +385,6 @@
                         <div class="col-lg-4">
                             <div id="rightStickySection">
                                 <div class="StickyBox">
-                                    <div class="topReportBtn">
-                                        <a href="javascript:void(0)"><i class="bi bi-file-earmark"></i> Download Insight Report</a>
-                                    </div>
                                     <div class="insightReport">
                                         <div class="reportTitle">
                                             <img src="assest/images/x-btn.png" alt="x-btn">
@@ -426,6 +443,9 @@
                                                 <a class="linkBtn" href="javascript:void(0)">Contact Exio Agent</a>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="topReportBtn">
+                                        <a href="javascript:void(0)"><i class="bi bi-file-earmark"></i> Download Insight Report</a>
                                     </div>
                                 </div>
                             </div>
@@ -552,123 +572,36 @@
 
 
 <script src="assest/js/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="assest/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="assest/js/custom.js"></script>
 
 <script>
-  const ctx = document.getElementById("chart");
+     let currentStep = 0;
+        const steps = document.querySelectorAll('.progress-step');
+        const progressLineFill = document.querySelector('.progress-line-fill');
 
-Chart.defaults.color = "#272626";
+        function updateProgress() {
+            steps.forEach((step, index) => {
+                if (index <= currentStep) {
+                    step.classList.add('completed');
+                } else {
+                    step.classList.remove('completed');
+                }
+            });
+            progressLineFill.style.width = `${(currentStep / (steps.length - 1)) * 100}%`;
 
-new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: [
-      "6 Month",
-      "1 year",
-      "1.5 year",
-      "2 year",
-      "2.5 year",
-      "3 year",
-      "3.5 year",
-      "4 year",
-      "4.5 year",
-      "5 year",
-      "5.5 year",
-      "6 year",
-    ],
-    datasets: [
-      {
-        label: "Monthly Income",
-        data: [2235, 3250, 1890, 5400, 20240, 6254, 12325, 4856, 10325, 2254, 22356, 8486].map(value => (value / 25000) * 100),
-        backgroundColor: "black",
-        borderColor: "coral",
-        borderRadius: 6,
-        cubicInterpolationMode: 'monotone',
-        fill: false,
-        borderSkipped: false,
-      },
-    ],
-  },
-  options: {
-    interaction: {
-      intersect: false,
-      mode: 'index'
-    },
-    elements: {
-      point:{
-          radius: 0
-      }
-    },
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        display: false,
-      },
-      title: {
-        display: true,
-        padding: {bottom: 24},
-        font: {
-          size: 16,
-          weight: "normal",
-        },
-      },
-      tooltip: {
-        backgroundColor: "orange",
-        bodyColor: "#272626",
-        yAlign: "bottom",
-        cornerRadius: 4,
-        titleColor: "#272626",
-        usePointStyle: true,
-        callbacks: {
-          label: function(context) {
-              if (context.parsed.y !== null) {
-                const label = context.parsed.y.toFixed(2) + '%';
-                return label;
-              }
-              return null;
-          }
+            if (currentStep < steps.length - 1) {
+                setTimeout(() => {
+                    currentStep++;
+                    updateProgress();
+                }, 1500);   
+            }
         }
-      },
-    },
-    scales: {
-      x: {
-        border: {
-          dash: [4, 4],
-        },
-        title: {
-          text: "2023",
-        },
-      },
-      y: {
-        grid: {
-          color: "#27292D",
-        },
-        border: {
-          dash: [1, 2],
-        },
-        ticks: {
-          callback: function(value) {
-            return value + '%';
-          },
-        },
-        title: {
-          display: true,
-          text: "Work Complete",
-          padding: {bottom: 16}
-        },
-        min: 0,
-        max: 100,
-      },
-    },
-  },
-});
 
-
+        updateProgress();
 </script>
+
 </body>
 
 </html>
