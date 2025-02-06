@@ -53,13 +53,13 @@
                             <li>
                                 <a href="javascript:void(0)" class="user-menu"><i class="fa-solid fa-user"></i></a>
                                 <ul class="userDropDown">
-                                    <li><a href="site_traking_listing.html"><img src="assest/images/login.png" alt="login">Login</a></li>
+                                    <li><a href="sign_in.html"><img src="assest/images/login.png" alt="login">Login</a></li>
                                     <li><a href="site_traking_listing.html"><img src="assest/images/project.png" alt="project">Project Insights</a></li>
                                     <li><a href="liked_properties.html"><img src="assest/images/shortlist.png" alt="shortlist">Shortlisted Properties</a></li>
                                     <li><a href="downloaded_certificates.html"><img src="assest/images/report.png" alt="report">Downloaded Reports</a></li>
                                     <li><a href="compare_report.html"><img src="assest/images/compare.png" alt="compare">Compare Reports</a></li>
                                     <li><a href="javascript:void(0)"><img src="assest/images/assist.png" alt="assist">Property Assist</a></li>
-                                    <li><a href="javascript:void(0)"><img src="assest/images/contact.png" alt="contact">Contact Us</a></li>
+                                    <li><a href="contact_us.html"><img src="assest/images/contact.png" alt="contact">Contact Us</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -121,7 +121,7 @@
                                 <a href="javascript:void(0)">more</a>
                             </div>
                             <div class="addtocompareBtn">
-                                <a href="javascript:void(0)">
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#comparePorjectModal">
                                     <input type="checkbox" class="form-check-input checkbox" id="checkbox-signin" name="remember" autocomplete="off">
                                     Add to Compare
                                 </a>
@@ -600,7 +600,7 @@
                                     </div>
                                     <div class="btn-container">
                                         <button class="btn btnWp"><img src="assest/images/wpicon.png" alt="wpicon">Quick Connect</button>
-                                        <button class="btn linkBtn">More Details</button>
+                                        <a href="details_page.html" class="btn linkBtn">More Details</a>
                                     </div>
                                 </div>
                             </div>
@@ -610,6 +610,90 @@
             </div>
         </div>
     <!-- propertyModal -->
+
+    <!-- compareModal -->
+        <!-- Modal -->
+        <div class="modal fade comparePorjectModal" id="comparePorjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="compareMain">
+                            <div class="comparePorjectCard">
+                                <div class="detailmainSec">
+                                    <div class="detailsTextSec">
+                                        <div class="siteDetails">
+                                            <div class="logoMain">
+                                                <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
+                                            </div>
+                                            <div class="textBox">
+                                                <h5>Ganesh Glory</h5>
+                                                <span>By Ganesh Group</span>
+                                                <div class="locationProperty">
+                                                    <div class="homeBox comBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>5 BHK Bungalows</p>
+                                                    </div>
+                                                    <div class="location comBox">
+                                                        <img src="assest/images/Location.png" alt="Location">
+                                                        <p>Gota, Ahmedabad</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="closeMark">
+                                            <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
+                                        </div>
+                                    </div>
+                                    <div class="endText">
+                                        <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
+                                    </div>
+                                    <div class="priceShare">
+                                        <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
+                                    </div>
+                                </div>
+                                <div class="detailmainSec">
+                                    <div class="detailsTextSec">
+                                        <div class="siteDetails">
+                                            <div class="logoMain">
+                                                <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
+                                            </div>
+                                            <div class="textBox">
+                                                <h5>Ganesh Glory</h5>
+                                                <span>By Ganesh Group</span>
+                                                <div class="locationProperty">
+                                                    <div class="homeBox comBox">
+                                                        <img src="assest/images/Home.png" alt="Home">
+                                                        <p>5 BHK Bungalows</p>
+                                                    </div>
+                                                    <div class="location comBox">
+                                                        <img src="assest/images/Location.png" alt="Location">
+                                                        <p>Gota, Ahmedabad</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="closeMark">
+                                            <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
+                                        </div>
+                                    </div>
+                                    <div class="endText">
+                                        <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
+                                    </div>
+                                    <div class="priceShare">
+                                        <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="compareBtn">
+                                <a href="compare_project.html" class="btn btnCompare">Compare</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- compareModal -->
+
 
     <!-- footer start -->
     <footer>
@@ -637,13 +721,13 @@
                                         <a href="index.html" class="active">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">About Us</a>
+                                        <a href="about_us.html">About Us</a>
                                     </li>
                                     <li>
                                         <a href="#">News</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact Us</a>
+                                        <a href="contact_us.html">Contact Us</a>
                                     </li>
                                     <li>
                                         <a href="#">Sitemap</a>
@@ -696,8 +780,8 @@
                     </div>
                     <div class="privacy">
                         <ul>
-                            <li><a href="javascript:void(0)">Terms of Use</a></li>
-                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="terms_of_use_policy.html">Terms of Use</a></li>
+                            <li><a href="terms_of_use_policy.html">Privacy Policy</a></li>
                             <li><a href="javascript:void(0)">Disclaimer</a></li>
                         </ul>
                     </div>
