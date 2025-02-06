@@ -3929,8 +3929,8 @@ textarea.inputClass {
     font-family: 'fontawesome';
     display: block;
     opacity: 0;
-    color: var(--white-color);
-    background-color: var(--blue-color);
+    color: var(--blue-color);
+    background-color: var(--white-color);
     font-size: 12px;
     border: 1px solid;
     padding: 0px 3px;
@@ -3947,6 +3947,18 @@ textarea.inputClass {
 .feetSelectBox .checkbox__input:checked:before {
     opacity: 1;
 }
+
+.feetSelectBox .checkbox__input:checked + .checkbox__label {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
+.feetSelectBox .checkbox:has(.checkbox__input:checked) {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
 
 .modelSize .footerBtn {
     margin-top: 50px;
