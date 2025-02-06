@@ -47,7 +47,7 @@
                     <div class="main-nav">
                         <ul>
                             <li class="moblieHide">
-                                <a href="check_match_property.html" class="second-menu"><i class="fa-solid fa-circle-check"></i> Check and match property</a>
+                                <a href="check_property_video.html" class="second-menu"><i class="fa-solid fa-circle-check"></i> Check and match property</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" class="user-menu"><i class="fa-solid fa-user"></i></a>
@@ -641,7 +641,9 @@
                                     <h5>Property Documents</h5>
                                 </div>
                                 <div class="browser_get">
-                                    <a href="javascript:void(0)" class="btnbrowser"><i class="bi bi-file-earmark"></i> Download Brochure</a>
+                                    <a href="javascript:void(0)" class="btnbrowser" data-bs-toggle="modal" data-bs-target="#downloadBrochure">
+                                        <i class="bi bi-file-earmark"></i> Download Brochure
+                                    </a>
                                 </div>
                             </div>
                             <div id="locality">
@@ -797,7 +799,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="leftScrollSection mobile">
+                        <div class="leftScrollSection mobile">  
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="flush-headingOne">
@@ -1297,7 +1299,9 @@
                                                     <h5>Property Documents</h5>
                                                 </div> -->
                                                 <div class="browser_get">
-                                                    <a href="javascript:void(0)" class="btnbrowser"><i class="bi bi-file-earmark"></i> Download Brochure</a>
+                                                    <a href="javascript:void(0)" class="btnbrowser" data-bs-toggle="modal" data-bs-target="#downloadBrochure">
+                                                        <i class="bi bi-file-earmark"></i> Download Brochure
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1969,6 +1973,49 @@
         </div>
     </footer>
     <!-- footer end -->
+    
+    <!-- downloadBrochure Modal -->
+    <div class="modal fade downloadBrochure" id="downloadBrochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="docHeader">
+                        <h5>Download Brochure of</h5>
+                        <div class="glorybox">
+                            <div class="gloryImg">
+                                <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
+                            </div>
+                            <div class="gloryText">
+                                <h6>Ganesh Glory</h6>
+                                <p>By Ganesh Group</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brochureBox">
+                        <p>Please share below details,</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label class="labelClass" for="">Full Name<span>*</span></label>
+                                <input class="inputClass" type="text" placeholder="Mike Jhone">
+                            </div>
+                            <div class="form-group">
+                                <label class="labelClass" for="">Phone Number<span>*</span></label>
+                                <input class="inputClass" type="number" placeholder="+91 98989 89898">
+                            </div>
+                            <div class="form-group">
+                                <label class="labelClass" for="">Email Address<span>*</span></label>
+                                <input class="inputClass" type="email" placeholder="Mikejhone1469@gmail.com">
+                            </div>
+                            <div class="btnDown">
+                                <button type="button" class="btn btnDownload">Download</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- downloadBrochure Modal -->
 
     <script src="assest/js/jquery-3.7.1.min.js"></script>
     <script src="assest/js/bootstrap.bundle.min.js"></script>
