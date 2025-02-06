@@ -1180,6 +1180,10 @@
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    .downloadBrochure .modal-body {
+        padding: 30px;
+    }
 }
 
 @media (max-width:479px) {

@@ -2197,6 +2197,12 @@ body.matchProperty {
     border-radius: 5px;
     padding: 30px 15px;
     background-color: var(--light-blue);
+    transition: 0.2s all;
+}
+
+#propert_document .browser_get a:hover {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
 }
 
 #propert_document .browser_get a i {
@@ -4194,3 +4200,66 @@ textarea.inputClass {
 }
 
 /* --------- filter box css end -------- */
+
+
+/* --------- downloadBrochure Modal css start ---------- */
+
+
+.downloadBrochure .modal-content {
+    border: none;
+}
+
+.downloadBrochure .modal-dialog {
+    max-width: 580px;
+}
+
+.downloadBrochure .modal-body {
+    padding: 50px;
+}
+
+.downloadBrochure .gloryImg img {
+    width: 80px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.downloadBrochure .glorybox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.downloadBrochure .gloryText h6 {
+    font-size: 20px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    color: var(--heading-text);
+    margin-bottom: 10px;
+}
+
+.downloadBrochure .gloryText p,
+.downloadBrochure .brochureBox p {
+    font-size: 16px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.downloadBrochure .brochureBox .form-group {
+    margin-bottom: 15px;
+}
+
+.downloadBrochure .btnDown .btnDownload {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: 400;
+    font-family: "Inter", serif;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+/* --------- downloadBrochure Modal css end ---------- */
