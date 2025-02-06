@@ -112,3 +112,23 @@ $('.mobileViewSection .owl-carousel').owlCarousel({
         }
     }
 })
+
+
+$(document).ready(function () {
+    $(".compareBoxOpen").click(function (event) {
+        
+        event.preventDefault(); 
+        event.stopPropagation();
+            $(".comparePorjectModal").addClass("show");
+        });
+
+    $(document).click(function (event) {
+        if (!$(event.target).closest(".comparePorjectModal, .compareBoxOpen").length) {
+            $(".comparePorjectModal").removeClass("show");
+        }
+    });
+    $(".propertyCard").click(function (event) {  
+        $('#propertyModal').modal('show');
+    });
+     
+});

@@ -85,7 +85,7 @@
             <div class="liked_properties_box">
                 <div class="row">
                     <div class="col-md-6 col-xl-4">
-                        <div class="propertyCard cursor-pointer" data-bs-toggle="modal" data-bs-target="#propertyModal">
+                        <div class="propertyCard cursor-pointer" >
                             <div class="imgBox">
                                 <img src="assest/images/property-img.png" alt="property-img">
                                 <div class="imgheader">
@@ -121,7 +121,7 @@
                                 <a href="javascript:void(0)">more</a>
                             </div>
                             <div class="addtocompareBtn">
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#comparePorjectModal">
+                                <a href="javascript:void(0)" class="compareBoxOpen">
                                     <input type="checkbox" class="form-check-input checkbox" id="checkbox-signin" name="remember" autocomplete="off">
                                     Add to Compare
                                 </a>
@@ -517,6 +517,79 @@
                     </nav>
                 </div>
             </div>
+            <div class="comparePorjectModal">
+                <div class="compareMain">
+                    <div class="comparePorjectCard">
+                        <div class="detailmainSec">
+                            <div class="detailsTextSec">
+                                <div class="siteDetails">
+                                    <div class="logoMain">
+                                        <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
+                                    </div>
+                                    <div class="textBox">
+                                        <h5>Ganesh Glory</h5>
+                                        <span>By Ganesh Group</span>
+                                        <div class="locationProperty">
+                                            <div class="homeBox comBox">
+                                                <img src="assest/images/Home.png" alt="Home">
+                                                <p>5 BHK Bungalows</p>
+                                            </div>
+                                            <div class="location comBox">
+                                                <img src="assest/images/Location.png" alt="Location">
+                                                <p>Gota, Ahmedabad</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="closeMark">
+                                    <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
+                                </div>
+                            </div>
+                            <div class="endText">
+                                <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
+                            </div>
+                            <div class="priceShare">
+                                <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
+                            </div>
+                        </div>
+                        <div class="detailmainSec">
+                            <div class="detailsTextSec">
+                                <div class="siteDetails">
+                                    <div class="logoMain">
+                                        <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
+                                    </div>
+                                    <div class="textBox">
+                                        <h5>Ganesh Glory</h5>
+                                        <span>By Ganesh Group</span>
+                                        <div class="locationProperty">
+                                            <div class="homeBox comBox">
+                                                <img src="assest/images/Home.png" alt="Home">
+                                                <p>5 BHK Bungalows</p>
+                                            </div>
+                                            <div class="location comBox">
+                                                <img src="assest/images/Location.png" alt="Location">
+                                                <p>Gota, Ahmedabad</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="closeMark">
+                                    <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
+                                </div>
+                            </div>
+                            <div class="endText">
+                                <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
+                            </div>
+                            <div class="priceShare">
+                                <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compareBtn">
+                        <a href="compare_project.html" class="btn btnCompare">Compare</a>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
     <!-- compare project section -->
@@ -610,89 +683,6 @@
             </div>
         </div>
     <!-- propertyModal -->
-
-    <!-- compareModal -->
-        <!-- Modal -->
-        <div class="modal fade comparePorjectModal" id="comparePorjectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="compareMain">
-                            <div class="comparePorjectCard">
-                                <div class="detailmainSec">
-                                    <div class="detailsTextSec">
-                                        <div class="siteDetails">
-                                            <div class="logoMain">
-                                                <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
-                                            </div>
-                                            <div class="textBox">
-                                                <h5>Ganesh Glory</h5>
-                                                <span>By Ganesh Group</span>
-                                                <div class="locationProperty">
-                                                    <div class="homeBox comBox">
-                                                        <img src="assest/images/Home.png" alt="Home">
-                                                        <p>5 BHK Bungalows</p>
-                                                    </div>
-                                                    <div class="location comBox">
-                                                        <img src="assest/images/Location.png" alt="Location">
-                                                        <p>Gota, Ahmedabad</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="closeMark">
-                                            <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
-                                        </div>
-                                    </div>
-                                    <div class="endText">
-                                        <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
-                                    </div>
-                                    <div class="priceShare">
-                                        <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
-                                    </div>
-                                </div>
-                                <div class="detailmainSec">
-                                    <div class="detailsTextSec">
-                                        <div class="siteDetails">
-                                            <div class="logoMain">
-                                                <img src="assest/images/ganesh-glory.png" alt="ganesh-glory">
-                                            </div>
-                                            <div class="textBox">
-                                                <h5>Ganesh Glory</h5>
-                                                <span>By Ganesh Group</span>
-                                                <div class="locationProperty">
-                                                    <div class="homeBox comBox">
-                                                        <img src="assest/images/Home.png" alt="Home">
-                                                        <p>5 BHK Bungalows</p>
-                                                    </div>
-                                                    <div class="location comBox">
-                                                        <img src="assest/images/Location.png" alt="Location">
-                                                        <p>Gota, Ahmedabad</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="closeMark">
-                                            <a href="javascript:void(0)"><img src="assest/images/x-orange.png" alt="x-orange"></a>
-                                        </div>
-                                    </div>
-                                    <div class="endText">
-                                        <p><i class="fa-regular fa-calendar"></i> Possession by Dec, 2024</p>
-                                    </div>
-                                    <div class="priceShare">
-                                        <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="compareBtn">
-                                <a href="compare_project.html" class="btn btnCompare">Compare</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- compareModal -->
 
 
     <!-- footer start -->

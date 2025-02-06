@@ -4313,22 +4313,22 @@ textarea.inputClass {
 /* --------- comparePorjectModal Modal css start ---------- */
 
 .comparePorjectModal {
-    background-color: transparent !important;
-}
-
-.comparePorjectModal .modal-content {
-    border-radius: 5px;
-}
-
-.comparePorjectModal .modal-dialog {
-    max-width: 1200px;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.comparePorjectModal .modal-body {
+    background-color: var(--white-color) !important;
     border: 2px solid var(--blue-color);
     border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    bottom: -100%;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s all;
+}
+
+.comparePorjectModal.show {
+    bottom: 0;
 }
 
 .comparePorjectModal .compareMain {
