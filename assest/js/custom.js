@@ -132,3 +132,19 @@ $(document).ready(function () {
     });
      
 });
+
+
+$(document).ready(function() {
+    $(".lightBoximg").click(function() {
+        $(".boxImg a").first().trigger("click");
+    });
+
+
+    $('body').on('click', '#nav-tabContent2 .imgBox, .masterImg', function(e) {
+        let src = $(this).find('img').attr('src') || $(this).attr('src'); 
+        $('.img_view_section img').attr('src', src);
+        $('#imageModal').modal('show');
+    });
+    
+
+});

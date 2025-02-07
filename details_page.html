@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assest/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="icon" type="image/x-icon" href="assest/images/x-icon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="assest/css/style.css" />
@@ -97,17 +98,31 @@
                                 </div>
                             </div>
                             <div class="moreBnt mobile">
-                                <a href="javascript:void(0)">20+ more Photos</a>
+                                <a href="javascript:void(0)" class="lightBoximg">20+ more Photos</a>
                             </div>
                         </div>
                         <div class="rightImg">
-                            <div class="boxImg"><img src="assest/images/boxImg1.png" alt="boxImg1"></div>
-                            <div class="boxImg"><img src="assest/images/boxImg2.png" alt="boxImg2"></div>
-                            <div class="boxImg"><img src="assest/images/boxImg1.png" alt="boxImg1"></div>
+                            <div class="boxImg">
+                                <a href="assest/images/boxImg1.png" data-fancybox="gallery">
+                                    <img src="assest/images/boxImg1.png" alt="boxImg1">
+                                </a>
+                            </div>
+                            <div class="boxImg">
+                                <a href="assest/images/boxImg2.png" data-fancybox="gallery">
+                                    <img src="assest/images/boxImg2.png" alt="boxImg2">
+                                </a>
+                            </div>
+                            <div class="boxImg">
+                                <a href="assest/images/boxImg1.png" data-fancybox="gallery">
+                                    <img src="assest/images/boxImg1.png" alt="boxImg1">
+                                </a>
+                            </div>
                             <div class="boxImg fourBox">
-                                <img src="assest/images/boxImg2.png" alt="boxImg2">
+                                <a href="assest/images/boxImg2.png" data-fancybox="gallery">
+                                    <img src="assest/images/boxImg2.png" alt="boxImg2">
+                                </a>
                                 <div class="moreBnt">
-                                    <a href="javascript:void(0)">20+ more Photos</a>
+                                    <a href="javascript:void(0)" class="lightBoximg">20+ more Photos</a>
                                 </div>
                             </div>
                         </div>
@@ -866,12 +881,13 @@
                                                     <nav>
                                                         <!-- <h5>Master Plan</h5> -->
                                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">2D</button>
-                                                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">3D</button>
+                                                          <button class="nav-link active" id="nav-home-tab5" data-bs-toggle="tab" data-bs-target="#nav-home5" type="button" role="tab" aria-controls="nav-home5" aria-selected="true">2D</button>
+
+                                                          <button class="nav-link" id="nav-profile-tab6" data-bs-toggle="tab" data-bs-target="#nav-profile6" type="button" role="tab" aria-controls="nav-profile6" aria-selected="false">3D</button>
                                                         </div>
                                                     </nav>
                                                     <div class="tab-content" id="nav-tabContent">
-                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                        <div class="tab-pane fade show active" id="nav-home5" role="tabpanel" aria-labelledby="nav-home-tab5" tabindex="0">
                                                             <div class="innerViewBox">
                                                                 <div class="viewText">
                                                                     <ul>
@@ -893,17 +909,21 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                        <div class="tab-pane fade" id="nav-profile6" role="tabpanel" aria-labelledby="nav-profile-tab6" tabindex="0">
                                                             <div class="innerViewBox">
                                                                 <div class="viewText">
                                                                     <ul>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 1</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)">
+                                                                                <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                            </a>
+                                                                        </li>
+                                                                        <!-- <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
                                                                         <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
                                                                         <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
                                                                         <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
                                                                         <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 7</h6></li>
+                                                                        <li><span>Lorem Ipsum</span><h6>Database 7</h6></li> -->
                                                                     </ul>
                                                                 </div>
                                                                 <div class="masterImg">
@@ -931,12 +951,13 @@
                                                 <div class="tabBox">
                                                     <nav>
                                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                          <button class="nav-link active" id="nav-home-tab1" data-bs-toggle="tab" data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1" aria-selected="true">2D</button>
-                                                          <button class="nav-link" id="nav-profile-tab2" data-bs-toggle="tab" data-bs-target="#nav-profile2" type="button" role="tab" aria-controls="nav-profile2" aria-selected="false">3D</button>
+                                                          <button class="nav-link active" id="nav-home-tab3" data-bs-toggle="tab" data-bs-target="#nav-home3" type="button" role="tab" aria-controls="nav-home3" aria-selected="true">2D</button>
+
+                                                          <button class="nav-link" id="nav-profile-tab4" data-bs-toggle="tab" data-bs-target="#nav-profile4" type="button" role="tab" aria-controls="nav-profile4" aria-selected="false">3D</button>
                                                         </div>
                                                     </nav>
                                                     <div class="tab-content" id="nav-tabContent2">
-                                                        <div class="tab-pane fade show active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home-tab1" tabindex="0">
+                                                        <div class="tab-pane fade show active" id="nav-home3" role="tabpanel" aria-labelledby="nav-home-tab3" tabindex="0">
                                                             <div class="sliderImgSec">
                                                                 <div class="owl-carousel owl-theme">
                                                                     <div class="item">
@@ -1002,7 +1023,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab2" tabindex="0">
+                                                        <div class="tab-pane fade" id="nav-profile4" role="tabpanel" aria-labelledby="nav-profile-tab4" tabindex="0">
                                                             <div class="sliderImgSec">
                                                                 <div class="owl-carousel owl-theme">
                                                                     <div class="item">
@@ -2017,17 +2038,35 @@
     </div>
     <!-- downloadBrochure Modal -->
 
+    <!-- imageModal Modal -->
+    <div class="modal fade imageLightBox" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="img_view_section">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- imageModal Modal -->
+
     <script src="assest/js/jquery-3.7.1.min.js"></script>
     <script src="assest/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
     <script src="assest/js/custom.js"></script>
 
     <script>
+
         $(".heartIconFill").click(function () {
             $(this).toggleClass("fa-regular fa-solid");
         });
         $('.sliderImgSec .owl-carousel').owlCarousel({
-            loop:true,
+            loop:false,
             margin:20,
             nav:true,
             navText:['<img src="assest/images/left-ar.png" alt="left-ar">','<img src="assest/images/right-ar.png" alt="right-ar">'],
