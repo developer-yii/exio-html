@@ -205,6 +205,15 @@
     .compare_project .borderBox .amenitiesItem {
         justify-content: start;
     }
+
+    .detailmainSec .detailsTextSec .locationProperty {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .detailmainSec .endText p {
+        margin-top: 10px;
+    }
 }
 
 
@@ -359,6 +368,10 @@
 
     .downloaded_certificates .downloaded_certificates_box .detailsTextSec .priceShare h5 {
         margin-bottom: 0;
+    }
+
+    .detailmainSec .detailsTextSec .siteDetails .logoMain img {
+        width: 90px;
     }
 }
 
@@ -895,6 +908,10 @@
     .compare_projectBox .locationProperty .comBox p {
         font-size: 14px;
     }
+
+    .comparePorjectModal .comparePorjectCard {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:575px) {
@@ -1184,6 +1201,27 @@
     .downloadBrochure .modal-body {
         padding: 30px;
     }
+
+    .comparePorjectModal .compareMain {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .compare_project .borderBox .documentBox,
+    .compare_project .borderBox .amenitiesItem,
+    .compare_project .borderBox .overViewBox {
+        justify-content: center;
+    }
+
+    .compare_project .borderBox .browser_get a,
+    .compare_project .borderBox .documentBox .boxBox,
+    .compare_project .borderBox .documentBox a {
+        width: 100%;
+    }
+
+    .left_traking_stepSec .stepallBox .stepText .checkImg img {
+        width: 25px;
+    }
 }
 
 @media (max-width:479px) {
@@ -1332,6 +1370,23 @@
 
     .sign_in_box .leftBox .mainWhiteBox .title p {
         font-size: 14px;
+    }
+
+    .compare_project .borderBox .owl-carousel {
+        max-width: 250px;
+    }
+
+    .compare_project .borderBox .owl-nav .owl-prev img, 
+    .compare_project .borderBox .owl-nav .owl-next img {
+        max-width: 28px;
+    }
+
+    .compare_project .borderBox .owl-nav .owl-next {
+        right: -40px;
+    }
+
+    .compare_project .borderBox .owl-nav .owl-prev {
+        left: -40px;
     }
 }
 
