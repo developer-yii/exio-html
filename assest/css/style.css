@@ -3861,6 +3861,7 @@ textarea.inputClass {
 .modelSize .modal-dialog {
     max-width: 650px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .modelSize .btn-close {

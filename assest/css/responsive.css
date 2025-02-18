@@ -1222,6 +1222,18 @@
     .left_traking_stepSec .stepallBox .stepText .checkImg img {
         width: 25px;
     }
+
+    .modelSize .modal-dialog {
+        max-width: 470px;
+    }
+
+    .modelSize .modal-body {
+        padding: 40px 20px;
+    }
+
+    .modelSize .modal-body .title h4 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width:479px) {
