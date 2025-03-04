@@ -815,10 +815,19 @@
         width: 100%;
         padding: 5px 20px;
         border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    #master_plan .tabBox .viewText ul li {
-        text-align: center;
+    #master_plan .tabBox .viewText ul li a i {
+        color: #6A6A71;
+        font-size: 16px;
+        transition: 0.2s;
+    }
+
+    #master_plan .tabBox .viewText ul li a i.active {
+        transform: rotate(180deg);
     }
 
     #master_plan .tabBox .viewText ul li a span {
@@ -924,6 +933,7 @@
 
     #master_plan .tabBox .viewText {
         position: relative;
+        margin-bottom: 0;
     }
 
     #master_plan .tabBox .viewText .dataDropdown {
@@ -944,6 +954,7 @@
     #master_plan .tabBox .viewText .dataDropdown li a {
         background-color: #fff;
         transition: 0.2s;
+        display: block;
     }
 
     #master_plan .tabBox .viewText .dataDropdown li a:hover {
@@ -1437,6 +1448,10 @@
 
     .compare_project .borderBox .owl-nav .owl-prev {
         left: -40px;
+    }
+
+    .detailmainSec .imageGallery .leftVideo .videoCoverImage video {
+        height: 290px;
     }
 }
 

@@ -1727,7 +1727,7 @@ body.matchProperty {
     object-fit: cover;
 }
 
-.detailmainSec .imageGallery .leftVideo .videoCoverImage iframe {
+.detailmainSec .imageGallery .leftVideo .videoCoverImage video {
     height: 375px;
 }
 
