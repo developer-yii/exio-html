@@ -87,10 +87,10 @@
                     <div class="imageGallery">
                         <div class="leftVideo">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
+                                <!-- <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
                                   <img class="thumb" style="cursor: pointer;" src="assest/images/videoImg.png">
-                                </div>
-                                <div id="thevideo" style="display: none;">
+                                </div> -->
+                                <div id="thevideo">
                                   <iframe src="https://www.youtube.com/embed/mJVuZiK9a6I?si=2-JWz6myu0575d3g" frameborder="0" allowfullscreen="" include=""></iframe>
                                 </div>
                                 <div class="playIcon" >
@@ -259,40 +259,31 @@
                                               <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">3D</button>
                                             </div>
                                         </nav>
-                                        <div class="tab-content" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                                                <div class="innerViewBox">
-                                                    <div class="viewText">
-                                                        <ul>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 1</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 7</h6></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="masterImg">
-                                                        <img src="assest/images/master-img.png" alt="master-img">
+                                        <div class="newMaster">
+                                            <div class="viewText">
+                                                <ul>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 1</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
+                                                    <li><span>Lorem Ipsum</span><h6>Database 7</h6></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                    <div class="innerViewBox">
+                                                        <div class="masterImg">
+                                                            <img src="assest/images/master-img.png" alt="master-img">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                                                <div class="innerViewBox">
-                                                    <div class="viewText">
-                                                        <ul>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 1</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
-                                                            <li><span>Lorem Ipsum</span><h6>Database 7</h6></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="masterImg">
-                                                        <img src="assest/images/master-img.png" alt="master-img">
+                                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                    <div class="innerViewBox">
+                                                        <div class="masterImg">
+                                                            <img src="assest/images/master-img.png" alt="master-img">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -886,48 +877,45 @@
                                                           <button class="nav-link" id="nav-profile-tab6" data-bs-toggle="tab" data-bs-target="#nav-profile6" type="button" role="tab" aria-controls="nav-profile6" aria-selected="false">3D</button>
                                                         </div>
                                                     </nav>
-                                                    <div class="tab-content" id="nav-tabContent">
-                                                        <div class="tab-pane fade show active" id="nav-home5" role="tabpanel" aria-labelledby="nav-home-tab5" tabindex="0">
-                                                            <div class="innerViewBox">
-                                                                <div class="viewText">
-                                                                    <ul>
+                                                    <div class="newMaster">
+                                                        <div class="viewText">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="masterClick" href="javascript:void(0)">
+                                                                        <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                    </a>
+                                                                    <ul class="dataDropdown">
                                                                         <li>
                                                                             <a href="javascript:void(0)">
                                                                                 <span>Lorem Ipsum</span><h6>Database 1</h6>
                                                                             </a>
+                                                                            <a href="javascript:void(0)">
+                                                                                <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)">
+                                                                                <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                            </a>
+                                                                            <a href="javascript:void(0)">
+                                                                                <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                            </a>
                                                                         </li>
-                                                                        <!-- <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 7</h6></li> -->
                                                                     </ul>
-                                                                </div>
-                                                                <div class="masterImg">
-                                                                    <img src="assest/images/master-img.png" alt="master-img">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="tab-content" id="nav-tabContent">
+                                                            <div class="tab-pane fade show active" id="nav-home5" role="tabpanel" aria-labelledby="nav-home-tab5" tabindex="0">
+                                                                <div class="innerViewBox">
+                                                                    <div class="masterImg">
+                                                                        <img src="assest/images/master-img.png" alt="master-img">
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-profile6" role="tabpanel" aria-labelledby="nav-profile-tab6" tabindex="0">
-                                                            <div class="innerViewBox">
-                                                                <div class="viewText">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="javascript:void(0)">
-                                                                                <span>Lorem Ipsum</span><h6>Database 1</h6>
-                                                                            </a>
-                                                                        </li>
-                                                                        <!-- <li><span>Lorem Ipsum</span><h6>Database 2</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 3</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 4</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 5</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 6</h6></li>
-                                                                        <li><span>Lorem Ipsum</span><h6>Database 7</h6></li> -->
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="masterImg">
-                                                                    <img src="assest/images/master-img.png" alt="master-img">
+                                                            <div class="tab-pane fade" id="nav-profile6" role="tabpanel" aria-labelledby="nav-profile-tab6" tabindex="0">
+                                                                <div class="innerViewBox">
+                                                                    <div class="masterImg">
+                                                                        <img src="assest/images/master-img.png" alt="master-img">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1640,7 +1628,7 @@
                                 <div class="addressBox">
                                     <img src="assest/images/Home.png" alt="Home">
                                     <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
-                                    <a href="javascript:void(0)">more</a>
+                                    <span href="javascript:void(0)">more</span>
                                 </div>
                             </div>
                         </div>
@@ -1678,7 +1666,7 @@
                                 <div class="addressBox">
                                     <img src="assest/images/Home.png" alt="Home">
                                     <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
-                                    <a href="javascript:void(0)">more</a>
+                                    <span href="javascript:void(0)">more</span>
                                 </div>
                             </div>
                         </div>
@@ -1716,7 +1704,7 @@
                                 <div class="addressBox">
                                     <img src="assest/images/Home.png" alt="Home">
                                     <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
-                                    <a href="javascript:void(0)">more</a>
+                                    <span href="javascript:void(0)">more</span>
                                 </div>
                             </div>
                         </div>

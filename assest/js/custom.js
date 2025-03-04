@@ -64,6 +64,16 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('.masterClick').click(function(e){
+        e.stopPropagation();
+        $('.dataDropdown').toggleClass('active');
+    });
+
+    $(document).click(function(){
+        $('.dataDropdown').removeClass('active');
+    });
+    
 });
 
 // ================ Slider js

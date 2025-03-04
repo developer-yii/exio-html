@@ -1688,7 +1688,7 @@ body.matchProperty {
     max-width: 250px;
 }
 
-.propertyCard .addressBox a {
+.propertyCard .addressBox span {
     color: var(--blue-color);
     margin-left: 5px;
 }
@@ -2018,12 +2018,22 @@ body.matchProperty {
     margin: 20px 0;
 }
 
-#master_plan .tabBox .tab-content .tab-pane .viewText {
+#master_plan .tabBox .newMaster {
+    display: flex;
+    gap: 20px;
+}
+
+#master_plan .tabBox .viewText {
     width: 35%;
+    margin: 20px 0;
+}
+
+#master_plan .tabBox .tab-content {
+    width: 65%;
 }
 
 #master_plan .tabBox .tab-content .tab-pane .masterImg {
-    width: 65%;
+    width: 100%;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 6px;
@@ -2145,7 +2155,7 @@ body.matchProperty {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 #amenites .amenitesBox .amenitiesItem .itemsBox {
