@@ -87,14 +87,11 @@
                     <div class="imageGallery">
                         <div class="leftVideo">
                             <div class="videoCoverImage">
-                                <!-- <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-                                  <img class="thumb" style="cursor: pointer;" src="assest/images/videoImg.png">
-                                </div> -->
-                                <div id="thevideo">
-                                  <iframe src="https://www.youtube.com/embed/mJVuZiK9a6I?si=2-JWz6myu0575d3g" frameborder="0" allowfullscreen="" include=""></iframe>
-                                </div>
-                                <div class="playIcon" >
-                                    <img src="assest/images/playBtn.png" alt="playBtn">
+                                <video controls id="myVideo">
+                                    <source src="assest/images/video2.mp4">
+                                </video>
+                                <div class="playIcon" id="playIcon">
+                                    <a href="javascript:void(0)"><img src="assest/images/playBtn.png" alt="playBtn"></a>
                                 </div>
                             </div>
                             <div class="moreBnt mobile">
@@ -882,7 +879,10 @@
                                                             <ul>
                                                                 <li>
                                                                     <a class="masterClick" href="javascript:void(0)">
-                                                                        <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                        <div>
+                                                                            <span>Lorem Ipsum</span><h6>Database 1</h6>
+                                                                        </div>
+                                                                        <i class="fa-solid fa-chevron-down"></i>
                                                                     </a>
                                                                     <ul class="dataDropdown">
                                                                         <li>
@@ -2071,6 +2071,25 @@
                 }
             }
         })
+
+        const video = document.getElementById("myVideo");
+        const playIcon = document.getElementById("playIcon");
+
+        // Play video on clicking playIcon
+        playIcon.addEventListener("click", function () {
+            video.play();
+            playIcon.style.display = "none"; // Hide play icon
+        });
+
+        // Show playIcon when the video is paused
+        video.addEventListener("pause", function () {
+            playIcon.style.display = "block"; // Show play icon
+        });
+
+        // Hide playIcon when the video is playing
+        video.addEventListener("play", function () {
+            playIcon.style.display = "none"; // Hide play icon
+        });
     </script>
 </body>
 

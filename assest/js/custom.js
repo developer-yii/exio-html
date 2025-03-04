@@ -68,12 +68,14 @@ $(document).ready(function () {
     $('.masterClick').click(function(e){
         e.stopPropagation();
         $('.dataDropdown').toggleClass('active');
+        $('.masterClick i').toggleClass('active');
     });
 
     $(document).click(function(){
         $('.dataDropdown').removeClass('active');
+        $('.masterClick i').removeClass('active');
     });
-    
+
 });
 
 // ================ Slider js
