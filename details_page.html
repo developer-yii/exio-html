@@ -170,7 +170,7 @@
                         <div class="priceShare">
                             <ul>
                                 <li><a href="javascript:void(0)"><i class="fa-regular fa-heart"></i>Save</a></li>
-                                <li><a href="javascript:void(0)"><i class="fa-solid fa-arrow-up-from-bracket"></i>Share</a></li>
+                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#share_property"><i class="fa-solid fa-arrow-up-from-bracket"></i>Share</a></li>
                             </ul>
                             <h5><span>₹ 1.25 Cr</span> - <span>₹ 2.50 Cr</span></h5>
                         </div>
@@ -2040,6 +2040,43 @@
         </div>
     </div>
     <!-- imageModal Modal -->
+
+  
+    <!-- Share_property Modal -->
+    <div class="modal fade share_property" id="share_property" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="titlebox">
+                        <p>Share Property</p>
+                    </div>
+                    <div class="iconBox">
+                        <ul>
+                            <li>
+                                <a href="#" id="whatsapp-link"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="facebook-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="twitter-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="copy-link" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" onClick="copyToClipboard()">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assest/js/jquery-3.7.1.min.js"></script>
     <script src="assest/js/bootstrap.bundle.min.js"></script>
