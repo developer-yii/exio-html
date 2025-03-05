@@ -1453,6 +1453,10 @@
     .detailmainSec .imageGallery .leftVideo .videoCoverImage video {
         height: 290px;
     }
+
+    .share_property .modal-body {
+        padding: 15px 15px 40px 15px;
+    }
 }
 
 @media (max-width:375px) {
