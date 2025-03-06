@@ -137,7 +137,15 @@
         <div class="landMarkFilter">
           <div class="searchBox">
             <p>Search</p>
-            <input type="search" placeholder="Locality, Landmark, Project, or Builder|">
+            <input type="search" class="clickList" placeholder="Locality, Landmark, Project, or Builder|" onkeyup="searchList(this);">
+            <div class="search-key d-none">
+              <ul>
+                  <h6>Locality</h6>
+                  <li style=""><a href="javascript:void(0)">Ahmedabad</a></li>
+                  <li style=""><a href="javascript:void(0)">Rajkot</a></li>
+                  <li style=""><a href="javascript:void(0)">Junagadh</a></li>
+              </ul>
+          </div>
           </div>
           <div class="searchIcon">
             <a href="check_match_property.html" class="btn btnIcon"><i class="bi bi-search"></i></a>
@@ -886,7 +894,21 @@
   <script src="assest/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="assest/js/custom.js"></script>
-
+  <script>
+    $(document).ready(function(){
+      $(".clickList").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        if (value === "") {
+          $(this).closest('.searchBox').find('.search-key').addClass('d-none'); 
+        } else {
+          $(this).closest('.searchBox').find('.search-key').removeClass('d-none');
+          $(this).closest('.searchBox').find("li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -571,42 +571,60 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="propertyCard" data-bs-toggle="modal" data-bs-target="#propertyModal">
-                                                    <div class="imgBox">
-                                                        <img src="assest/images/property-img.png" alt="property-img">
-                                                        <div class="imgheader">
-                                                            <span>Best for Investment</span>
-                                                            <i class="fa-regular fa-heart heartIconFill"></i>
+                                                <!-- propertyCardMap design -->
+                                                <div class="propertyCard propertyCardMap">
+                                                    <div class="owl-carousel owl-theme">
+                                                        <div class="item">
+                                                            <div class="imgBox">
+                                                                <img src="assest/images/property-img.png" alt="property-img">
+                                                                <div class="imgheader">
+                                                                    <span>Best for Investment</span>
+                                                                    <i class="fa-regular fa-heart heartIconFill"></i>
+                                                                </div>
+                                                            </div>  
                                                         </div>
-                                                    </div>  
+                                                        <div class="item">
+                                                            <div class="imgBox">
+                                                                <img src="assest/images/property-img.png" alt="property-img">
+                                                                <div class="imgheader">
+                                                                    <span>Best for Investment</span>
+                                                                    <i class="fa-regular fa-heart heartIconFill"></i>
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="imgBox">
+                                                                <img src="assest/images/property-img.png" alt="property-img">
+                                                                <div class="imgheader">
+                                                                    <span>Best for Investment</span>
+                                                                    <i class="fa-regular fa-heart heartIconFill"></i>
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
                                                     <div class="priceBox">
                                                         <div class="price">
                                                             <h5>₹50L-1Cr</h5>
                                                         </div>
+                                                    </div>
+                                                    <div class="propertyName">
+                                                        <h5>Ganesh Glory</h5>
+                                                    </div>
+                                                    <div class="locationProperty">
+                                                        <p>5 BHK | 2000 Sqft | Gota</p>
+                                                    </div>
+                                                    <div class="addressBoxMap">
                                                         <div class="boxLogo">
                                                             <img src="assest/images/x-btn.png" alt="x-btn">
                                                             <span>60%</span>
                                                         </div>
-                                                    </div>
-                                                    <div class="propertyName">
-                                                        <h5>GANESH GLORY</h5>
-                                                    </div>
-                                                    <div class="locationProperty">
-                                                        <div class="homeBox comBox">
-                                                            <img src="assest/images/Home.png" alt="Home">
-                                                            <p>5 BHK Bungalows</p>
+                                                        <div class="clickTo">
+                                                            <input type="checkbox" class="form-check-input checkbox" id="checkbox-signin" name="remember" autocomplete="off">
+                                                            <label for="">Compare</label>
                                                         </div>
-                                                        <div class="location comBox">
-                                                            <img src="assest/images/Location.png" alt="Location">
-                                                            <p>Gota, Ahmedabad</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="addressBox">
-                                                        <img src="assest/images/Home.png" alt="Home">
-                                                        <p>Lift, Gym, Park, Club House Lift, Gym, Park, Club House</p>
-                                                        <a href="javascript:void(0)">more</a>
                                                     </div>
                                                 </div>
+                                                <!-- propertyCardMap design -->
                                             </div>
                                         </div>
                                     </div>
@@ -1413,6 +1431,18 @@
     $(".heartIconFill").click(function () {
         $(this).toggleClass("fa-regular fa-solid");
     });
+
+    $('.propertyCardMap .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
 </script>
 
 </body>
