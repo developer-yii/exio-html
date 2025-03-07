@@ -560,6 +560,11 @@ header .header-box .mobileIcon {
 .filterSec .bannerFilterBox .cityFilter a.cityClick i {
     font-size: 16px;
     color: #6A6A71;
+    transition: 0.2s all;
+}
+
+.filterSec .bannerFilterBox .cityFilter a.cityClick i.rotate {
+    transform: rotate(180deg);
 }
 
 .filterSec .bannerFilterBox .cityFilter ul.citySelect {
