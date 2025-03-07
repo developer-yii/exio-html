@@ -1283,6 +1283,11 @@
     .modelSize .modal-body .title h4 {
         font-size: 28px;
     }
+
+    .searchBox .search-key {
+        top: 48px;
+        border-radius: 5px;
+    }
 }
 
 @media (max-width:479px) {
