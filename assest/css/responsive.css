@@ -1284,9 +1284,18 @@
         font-size: 28px;
     }
 
-    .searchBox .search-key {
+    .searchKeyup .search-key {
         top: 48px;
         border-radius: 5px;
+    }
+
+    .comparePorjectModal .detailmainSec {
+        width: 100%;
+    }
+
+    .comparePorjectModal .compareMain .closeModal {
+        top: -28px;
+        right: -10px;
     }
 }
 
