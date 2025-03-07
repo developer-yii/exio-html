@@ -43,6 +43,7 @@ $(document).ready(function () {
     $('.cityClick').click(function (e) {
         e.stopPropagation(); 
         $('.citySelect').toggleClass('show');
+        $('a.cityClick i').toggleClass('rotate');
         $('.projectDropDown').removeClass('show');
         $('.userDropDown').removeClass('show'); 
     });
