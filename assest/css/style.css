@@ -593,7 +593,7 @@ header .header-box .mobileIcon {
     position: relative;
 }
 
-.filterSec .bannerFilterBox .landMarkFilter .searchBox .search-key {
+.searchBox .search-key {
     position: absolute;
     width: 100%;
     background-color: #fff;
@@ -607,17 +607,17 @@ header .header-box .mobileIcon {
     box-shadow: 0px 5px 20px #00000026 !important;
 }
 
-.filterSec .bannerFilterBox .landMarkFilter .searchBox .search-key ul:not(:last-child) {
+.searchBox .search-key ul:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.filterSec .bannerFilterBox .landMarkFilter .searchBox .search-key ul h6 {
+.searchBox .search-key ul h6 {
     margin-bottom: 5px;
     color: var(--heading-text);
     font-family: 'Inter-SemiBold';
 }
 
-.filterSec .bannerFilterBox .landMarkFilter .searchBox .search-key ul li a {
+.searchBox .search-key ul li a {
     padding: 8px 5px;
     width: 100%;
     color: var(--input-color);
@@ -626,7 +626,7 @@ header .header-box .mobileIcon {
     font-family: 'Inter-Regular';
 }
 
-.filterSec .bannerFilterBox .landMarkFilter .searchBox .search-key ul li a:hover {
+.searchBox .search-key ul li a:hover {
     background-color: #EEF6FF;
 }
 
@@ -1607,7 +1607,7 @@ body.matchProperty {
 
 .propertyCard .imgBox img {
     width: 100%;
-    min-height: 200px;
+    height: 200px;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -4562,6 +4562,10 @@ textarea.inputClass {
 
 
 /* --------- share_property modal css ------------ */
+
+.propertyCard.propertyCardMap:hover {
+    border-color: transparent;
+}
 
 .propertyCard.propertyCardMap .addressBoxMap {
     display: flex;
