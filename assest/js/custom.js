@@ -1,3 +1,11 @@
+// site loader
+$(document).ready(function () {
+    setTimeout(function () {
+        $("#siteLoader").fadeOut(500); 
+    }, 1000);
+});
+
+
 // side-bar click menu
     $(document).ready(function () {
         $('header .main-nav .click-menu').click(function () {
@@ -183,3 +191,4 @@ $('.counter').each(function() {
       }
     });     
 });
+
