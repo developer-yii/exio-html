@@ -558,6 +558,7 @@
         flex-wrap: wrap;
         width: 100%;
         gap: 10px;
+        display: flex;
     }
 
     .left_traking_stepSec .stepallBox .stepText .stepTextmobile {
