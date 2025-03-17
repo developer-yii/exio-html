@@ -214,6 +214,15 @@
     .detailmainSec .endText p {
         margin-top: 10px;
     }
+
+    .compare_reports .compare_reports_box {
+        flex-wrap: wrap;
+    }
+
+    .compare_reports .certificates_box,
+    .compare_reports .compare_reports_box .download_box {
+        width: 100%;
+    }
 }
 
 
@@ -385,6 +394,24 @@
 
     .bannerSky .askQuestion a {
         font-size: 20px;
+    }
+
+    .downloaded_certificates_box .detailmainSec .detailsTextSec .siteDetails {
+        width: 100%;
+    }
+
+    .compare_reports .certificates_box {
+        flex-wrap: wrap;
+    }
+    .compare_reports .detailmainSec {
+        width: 100%;
+    }
+    .compare_reports .certificates_box .compareVs {
+        margin: 0 auto;
+    }
+
+    .compare_reports .detailmainSec .innerPriceBox .priceShare h5 {
+        font-size: 18px;
     }
 }
 
@@ -806,7 +833,8 @@
         margin-bottom: 30px;
     }
 
-    .aboutUs .countourView {
+    .aboutUs .countourView,
+    .compare_reports .detailmainSec .innerPriceBox {
         flex-wrap: wrap;
     }
 
@@ -973,6 +1001,10 @@
 
     #master_plan .tabBox .viewText .dataDropdown li a:hover {
         background-color: var(--light-blue);
+    }
+
+    .detailmainSec .detailsTextSec .siteDetails {
+        width: 100%;
     }
 
 }
