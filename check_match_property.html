@@ -77,8 +77,16 @@
                 <div class="main_property">
                     <div class="left_propertyBox">
                         <div class="topFilterBar">
-                            <div class="searchBar">
-                                <input type="search" name="" id="" placeholder="Locality, Landmark, Project, or Builder">
+                            <div class="searchBar searchKeyup">
+                                <input type="search" class="clickList" name="" id="" placeholder="Locality, Landmark, Project, or Builder">
+                                <div class="search-key d-none">
+                                    <ul>
+                                        <h6>Locality</h6>
+                                        <li><a href="javascript:void(0)">Ahmedabad</a></li>
+                                        <li><a href="javascript:void(0)">Rajkot</a></li>
+                                        <li><a href="javascript:void(0)">Junagadh</a></li>
+                                    </ul>
+                                  </div>
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div class="filterBox">
@@ -1444,6 +1452,22 @@
     }
 })
 </script>
+
+<script>
+    $(document).ready(function(){
+      $(".clickList").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        if (value === "") {
+          $(this).closest('.searchBar').find('.search-key').addClass('d-none'); 
+        } else {
+          $(this).closest('.searchBar').find('.search-key').removeClass('d-none');
+          $(this).closest('.searchBar').find("li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 
