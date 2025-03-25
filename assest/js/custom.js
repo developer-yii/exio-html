@@ -192,3 +192,14 @@ $('.counter').each(function() {
     });     
 });
 
+
+document.querySelector(".moreBtn").addEventListener("click", function () {
+    let content = document.querySelector(".content");
+    content.classList.toggle("expanded");
+
+    if (content.classList.contains("expanded")) {
+        this.textContent = "Less...";
+    } else {
+        this.textContent = "More...";
+    }
+});

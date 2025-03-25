@@ -748,6 +748,10 @@ header .header-box .mobileIcon {
     box-shadow: 0px 5px 20px #00000026 !important;
 }
 
+.searchBar.searchKeyup .search-key {
+    top: 50px;
+}
+
 .searchKeyup .search-key ul:not(:last-child) {
     margin-bottom: 15px;
 }
@@ -1796,11 +1800,12 @@ body.matchProperty {
 
 .propertyCard .priceBox .boxLogo img {
     width: 100%;
-    max-width: 110px;
+    max-width: 100px;
 }
 
 .propertyCard .priceBox .price h5 {
     margin-bottom: 0;
+    font-size: 20px
 }
 
 .propertyCard .priceBox .boxLogo span {
@@ -1817,9 +1822,9 @@ body.matchProperty {
 }
 
 .propertyCard .locationProperty {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap: 10px; */
     padding: 10px 0;
     border-top: 1px solid var(--orange-color);
     border-bottom: 1px solid var(--orange-color);
@@ -4951,7 +4956,7 @@ textarea.inputClass {
 
 .forumBoxMain .comQuebox span {
     font-size: 16px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: #005395;
     font-weight: 700;
     font-family: "Inter", serif;
@@ -4968,6 +4973,20 @@ textarea.inputClass {
     font-family: "Inter", serif;
     margin-bottom: 10px;
 }
+
+.content {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to 4 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+}
+
 
 .forumBoxMain .comQuebox .moreBtn {
     font-weight: 500;
