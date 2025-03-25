@@ -2706,9 +2706,8 @@ header.removeHeader.show {
 .startProperty .leftVideoSec .videoCoverImage video {
     width: 100%;
     border-radius: 5px;
-    height: 100%;
     object-fit: cover;
-    height: 770px;
+    height: calc(100vh - 150px);
     border: 1px solid var(--blue-color);
 }
 
@@ -5081,3 +5080,77 @@ textarea.inputClass {
 
 
 /* ------- forum sec css end -------- */
+
+
+
+/* ------- Blog sec css end -------- */
+
+.blog_main_section .row {
+    row-gap: 25px;
+}
+
+.blog_main_section .row a {
+    width: 100%;
+    height: 100%;
+}
+
+.blog_main_section .blog_item {
+    padding: 10px;
+    border: 1px solid var(--blue-color);
+    border-radius: 5px;
+    transition: 0.3s all;
+    /* margin-bottom: 25px; */
+    height: 100%;
+}
+
+.blog_main_section .blog_item .blog_img img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.blog_main_section .blog_item .blog_text {
+    padding: 15px 0;
+}
+
+.blog_main_section .blog_item .blog_text h5,
+.blog_main_section .blog_item .blog_text h6 {
+    margin-bottom: 10px;
+    /* padding-bottom: 10px;
+    border-bottom: 1px solid var(--orange-color); */
+}
+
+.blog_main_section .blog_item .blog_text .addedBy p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.blog_main_section .blog_item .blog_text .addedBy p span {
+    color: var(--blue-color);
+}
+
+.blog_main_section .blog_item .blog_text p.discript {
+    font-size: 14px;
+}
+
+.blog_main_section .loadMore {
+    text-align: center;
+}
+
+.blog_main_section .loadMore .btn {
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 180px;
+    font-size: 18px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-family: 'Inter-Medium';
+    border-radius: 5px;
+    padding: 14px 24px;
+    border: 1px solid var(--blue-color);
+    transition: 0.3s all;
+    box-shadow: none;
+    outline: none;
+}
+
+/* ------- Blog sec css end -------- */
