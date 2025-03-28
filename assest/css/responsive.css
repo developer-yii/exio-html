@@ -413,6 +413,10 @@
     .compare_reports .detailmainSec .innerPriceBox .priceShare h5 {
         font-size: 18px;
     }
+
+    .blog_detail_box .right_sticky {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 767px) {
